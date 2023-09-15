@@ -39,35 +39,24 @@ And finally, the most important is the **Cost**
 
 **select ec2 stroll down, and Click on "Launch Instance."**
 
-<img width="934" alt="awe select ec2 instance" src="https://user-images.githubusercontent.com/85270361/123523381-14230580-d6bb-11eb-8263-717e39e960d9.PNG">
+![image](https://github.com/Amasalaha/my-personal-project-documentation/assets/89149327/b9a69933-857a-438d-b47c-ecb47b5f10b5)
 
 
 
-**Launch a new "EC2" instance of t2.micro family with Ubuntu Server 20.04 LTS(HVM) 64 bit**
+
+**Launch a new "EC2" instance of t2.micro family with Ubuntu Server 22.04 LTS(HVM) 64 bit**
 
 
-<img width="765" alt="aws ubuntu server" src="https://user-images.githubusercontent.com/85270361/123523536-0de15900-d6bc-11eb-9848-c5c47941b7b2.PNG">
+Next: to choose an instance type**
 
-
-
-**Click on Next: to choose an instance type**
-
-
-<img width="939" alt="aws t2 micro" src="https://user-images.githubusercontent.com/85270361/123523745-96acc480-d6bd-11eb-83c1-f3d9e7bd3ed5.PNG">
 
 
 
 **Next: Configure Instance Details**
 
 
-<img width="951" alt="aws confi" src="https://user-images.githubusercontent.com/85270361/123524110-015eff80-d6c0-11eb-91d3-6101f7305d9f.PNG">
-
-
-
 **Next:** Add Storage; to add or configure the Storage size and type.
 Every time you launch an instance from an AMI, a root storage device is created for that instance. The root storage device contains all the information necessary to boot the instance. You can specify storage volumes in addition to the root device volume when you create an AMI or launch an instance using block device.
-
-<img width="951" alt="aws stora" src="https://user-images.githubusercontent.com/85270361/123524647-a7f8cf80-d6c3-11eb-9715-a7f761f7196a.PNG">
 
 
 
@@ -75,21 +64,20 @@ Every time you launch an instance from an AMI, a root storage device is created 
 
 
 
-<img width="954" alt="aws add tags" src="https://user-images.githubusercontent.com/85270361/123524992-c8c22480-d6c5-11eb-872a-34324a6a75b9.PNG">
+![image](https://github.com/Amasalaha/my-personal-project-documentation/assets/89149327/d59ba1aa-5919-492b-8644-6057eecff0f6)
 
 
 
-Click Next: Configure Security Group; A security group acts as a virtual firewall for your EC2 instances to control incoming and outgoing traffic. Inbound rules control the incoming traffic to your instance, and outbound rules control the outgoing traffic from your instance. When you launch an instance, you can specify one or more security groups.
+Next: Configure Security Group; A security group acts as a virtual firewall for your EC2 instances to control incoming and outgoing traffic. Inbound rules control the incoming traffic to your instance, and outbound rules control the outgoing traffic from your instance. When you launch an instance, you can specify one or more security groups.
 
-
-<img width="960" alt="ASW SG" src="https://user-images.githubusercontent.com/85270361/123525303-7aae2080-d6c7-11eb-9d52-36629367bd6d.PNG">
+![image](https://github.com/Amasalaha/my-personal-project-documentation/assets/89149327/998a7203-370e-43ae-a07b-425c2c71fa15)
 
 
 
 **Next:Review Instance Launch**
 
 
-<img width="960" alt="AWS REVIEW AND LAU" src="https://user-images.githubusercontent.com/85270361/123525425-759da100-d6c8-11eb-83f1-e486807ade7b.PNG">
+
 
 
 
@@ -102,14 +90,14 @@ To create a new key-pair, Select "Create a new key-pair" from the drop down menu
 As for me, I already created a key-pair, so I selected "Choose an existing key-pair" and i checked the acknowledgment box
 
 
-<img width="544" alt="aws keypair" src="https://user-images.githubusercontent.com/85270361/123525635-1b054480-d6ca-11eb-8490-f38421871846.PNG">
+
 
 
 
 **Click on "View Instance" to check the Instance State and other details.**
 
+![image](https://github.com/Amasalaha/my-personal-project-documentation/assets/89149327/14f374b5-ac82-4ff3-83b2-00bc8d932a22)
 
-<img width="960" alt="aws view instance" src="https://user-images.githubusercontent.com/85270361/123525784-33c22a00-d6cb-11eb-92a3-c4d0dc76d1f3.PNG">
 
 
 
@@ -124,26 +112,31 @@ At this stage, you will see if your instance is running or still pending. mine i
 
 
 **Next** is to connect my instance to an SSH Client. 
-In my own case, am using MOBAXTERM, you can decide to use PUTTY or any other existing ones.
-And to connect to MOBAXTERM, you need to copy the public ip address of the instance you want to ssh to
+In my own case, am using PUTTY.
+And to connect to PUTTY, you need to connect to the ip adress of the instance you want to ssh to
 
 
 
-<img width="957" alt="aws public ip address" src="https://user-images.githubusercontent.com/85270361/123527017-d41c4c80-d6d3-11eb-8d58-3ba2e6d517a4.PNG">
+![image](https://github.com/Amasalaha/my-personal-project-documentation/assets/89149327/087bfb7c-d886-4c7e-add0-c6d4d74ac394)
 
 
-**Next** i opened my MOBAXTERM, i clicked on SESSION, SSH, on the REMOTE HOST i pasted my public-ip address i copied from my instance.
+
+**Next** i opened my PUTTY, I clicked on SESSION, SSH, on the REMOTE HOST i pasted my public-ip address i copied from my instance.
 i checked the box and i specify username as (ubuntu)
 
 
-<img width="715" alt="aws mobaxterm" src="https://user-images.githubusercontent.com/85270361/123539880-d0b8ad80-d733-11eb-9e56-5c7987027c81.PNG">
+![image](https://github.com/Amasalaha/my-personal-project-documentation/assets/89149327/cdd55ae2-ce04-4641-959b-38108dff5266)
+![image](https://github.com/Amasalaha/my-personal-project-documentation/assets/89149327/be5f74c3-859f-47b3-a551-68db192c9ed4)
 
 
 
-**Next** i clicked on ADVANCE SSH settings, i checked the box for private key, and i browse my downloaded key.pem 
+
+
+**Next** i clicked on SSH settings, i checked the box for private key, and i browse my downloaded key.pem 
 next i clicked on OK
 
-<img width="766" alt="Capture" src="https://user-images.githubusercontent.com/85270361/123540371-85ec6500-d736-11eb-8182-7cdf1c4b715f.PNG">
+![image](https://github.com/Amasalaha/my-personal-project-documentation/assets/89149327/264a30d1-d714-4c94-a1a2-914b05d420f9)
+
 
 
 
@@ -176,7 +169,10 @@ $ sudo apt install apache2
  ```
 
 
-<img width="689" alt="APACHE IS RUNNING" src="https://user-images.githubusercontent.com/85270361/123540764-900f6300-d738-11eb-9dcd-b84937be10ef.PNG">
+![image](https://github.com/Amasalaha/my-personal-project-documentation/assets/89149327/5a7341d7-e1ae-4ed0-bfe0-03c53ad76ff0)
+![image](https://github.com/Amasalaha/my-personal-project-documentation/assets/89149327/0e51b658-26fd-4d61-8337-a49ddc843880)
+
+
 
 
 
@@ -188,7 +184,9 @@ i added port 80 for http and port 443 https and i cliked on save rules
 **see my output:**
 
 
-<img width="954" alt="SG" src="https://user-images.githubusercontent.com/85270361/123543505-c0f69480-d746-11eb-97de-f08427ec7bb5.PNG">
+![image](https://github.com/Amasalaha/my-personal-project-documentation/assets/89149327/d6829935-6187-4aa9-950b-8eb8f51ae8cb)
+
+
 
 ## Our server is running and we can access it locally and from the Internet (Source 0.0.0.0/0 means ‘from any IP address’).
  
@@ -221,7 +219,8 @@ $ curl -s http://169.254.169.254/latest/meta-data/public-ipv4
 
 **see my output:**
 
-<img width="935" alt="apache test page" src="https://user-images.githubusercontent.com/85270361/123543890-9d344e00-d748-11eb-9f8c-b362bcfbd349.PNG">
+![image](https://github.com/Amasalaha/my-personal-project-documentation/assets/89149327/8bc7e111-3d7a-48f9-905b-4bd3d3eaab1e)
+
 
 
 
@@ -277,8 +276,8 @@ Press y|Y for Yes, any other key for No:
 
 when you are done, you will get this **output:** 
 
+![image](https://github.com/Amasalaha/my-personal-project-documentation/assets/89149327/45d312d1-6c45-4a5e-a030-d59a7cc4a450)
 
-<img width="714" alt="sql pluin" src="https://user-images.githubusercontent.com/85270361/123550451-66b8fc00-d765-11eb-814c-81fc9d924aea.PNG">
 
 
 * When you're finished, test if you're able to login to the MySQL Console by typing:
@@ -289,7 +288,8 @@ sudo mysql
 
 
 
-<img width="728" alt="sql data" src="https://user-images.githubusercontent.com/85270361/123550542-ec3cac00-d765-11eb-951c-362255c783fe.PNG">
+![image](https://github.com/Amasalaha/my-personal-project-documentation/assets/89149327/6a083076-b193-4f77-b66e-0ce3f1cb9b0e)
+
 
 
 * To exit the MySQL Console, type: exit
@@ -329,8 +329,8 @@ $ sudo apt -y install php libapache2-mod-php php-mysql
 ```
 php -v
 ```
+![image](https://github.com/Amasalaha/my-personal-project-documentation/assets/89149327/74f4b50f-9b61-4397-a9d5-768b1f8d9241)
 
-<img width="502" alt="php" src="https://user-images.githubusercontent.com/85270361/123551074-1e4f0d80-d768-11eb-8216-5cc6c6656197.PNG">
 
 
 * At this point, your LAMP stack is completely installed and fully operational.
@@ -373,7 +373,14 @@ $ sudo vi /etc/apache2/sites-available/projectlamp.conf
 This will create a new blank file. Paste in the following bare-bones configuration by hitting on i on the keyboard to enter the insert mode, and paste the text:
 
 
-<img width="719" alt="vi file" src="https://user-images.githubusercontent.com/85270361/123552786-a71d7780-d76f-11eb-9be1-01aeca3c9b70.PNG">
+<VirtualHost *:80>
+    ServerName projectlamp
+    ServerAlias www.projectlamp 
+    ServerAdmin webmaster@localhost
+    DocumentRoot /var/www/projectlamp
+    ErrorLog ${APACHE_LOG_DIR}/error.log
+    CustomLog ${APACHE_LOG_DIR}/access.log combined
+</VirtualHost>
 
 
 To save and close the file, simply follow the steps below:
@@ -393,7 +400,8 @@ $ sudo ls /etc/apache2/sites-available
 
 * see my output
 
-<img width="596" alt="conf" src="https://user-images.githubusercontent.com/85270361/123552945-9a4d5380-d770-11eb-80b5-cf6061818d71.PNG">
+![image](https://github.com/Amasalaha/my-personal-project-documentation/assets/89149327/0700e27c-0390-4650-8156-47d67f7578d4)
+
 
 
 ### With this VirtualHost configuration, we’re telling Apache to serve propitixhomes.local using */var/www/projectlamp* as the web root directory. If we like to test Apache without a domain name, we can remove or comment out the options ServerName and ServerAlias by adding a # character in the beginning of each option’s lines. Adding the # character there will tell the program to skip processing the instructions on those lines.
@@ -407,7 +415,8 @@ $ sudo a2ensite projectlamp
 ```
 
 
-<img width="683" alt="reload" src="https://user-images.githubusercontent.com/85270361/123553211-c0272800-d771-11eb-9687-2cf134a811a0.PNG">
+![image](https://github.com/Amasalaha/my-personal-project-documentation/assets/89149327/f3edb366-ea3f-4dc5-9794-5210eb912d77)
+
 
 
 * We might want to disable the default website that comes installed with Apache. This is required if we are not using a custom domain name, because in this case Apache’s default configuration would overwrite our virtual host. To disable Apache’sdefault website use a2dissite command, type:
@@ -417,8 +426,8 @@ $ sudo a2ensite projectlamp
 $ sudo a2dissite 000-default
 ```
 
+![image](https://github.com/Amasalaha/my-personal-project-documentation/assets/89149327/0b602a21-0810-4636-9cad-023b4cccf8e3)
 
-<img width="572" alt="disable" src="https://user-images.githubusercontent.com/85270361/123553386-cc5fb500-d772-11eb-9574-b6d1053de01f.PNG">
 
 
 * To make sure your configuration file doesn't contain syntax errors, run :
@@ -428,7 +437,8 @@ $ sudo apache2ctl configtest
 ```
 
 
-<img width="536" alt="ok" src="https://user-images.githubusercontent.com/85270361/123553507-645d9e80-d773-11eb-9c25-b23f9acf7d78.PNG">
+![image](https://github.com/Amasalaha/my-personal-project-documentation/assets/89149327/12ce780f-1ef7-4502-931f-3bb8320fd348)
+
 
 
 * Finally, reload Apache so these changes take effect:
@@ -450,7 +460,8 @@ $ sudo vi /var/www/projectlamp/index.html
 see my input :
 
 
-<img width="662" alt="ann" src="https://user-images.githubusercontent.com/85270361/123554661-e9978200-d778-11eb-9d1c-8d62b4dfab8e.PNG">
+![image](https://github.com/Amasalaha/my-personal-project-documentation/assets/89149327/7344c41d-3deb-4f9d-ac6e-40c6d2c52ebc)
+
 
 
 Now go to your browser and try to open your website URL using IP address:
@@ -466,8 +477,7 @@ http://<Public-DNS-Name>:80
 
 see my output :
 
-<img width="631" alt="it works" src="https://user-images.githubusercontent.com/85270361/123555103-81966b00-d77b-11eb-8ac2-1d964b4cad30.PNG">
-
+![image](https://github.com/Amasalaha/my-personal-project-documentation/assets/89149327/8ada9999-fd01-42d7-8687-32d232b5a035)
 
 
 You can leave this file in place as a temporary landing page for your application until you set up an index.php file to replace it. Once you do that, remember to remove or rename the index.html file from your document root, as it would take precedence over an index.php file by default.
@@ -521,15 +531,16 @@ This will open a blank file. Add the following text, which is valid PHP code, in
 <?php
 phpinfo();
 ```
+![image](https://github.com/Amasalaha/my-personal-project-documentation/assets/89149327/a94a5d1d-647f-4f27-93c0-e6ecf6132d07)
 
-<img width="744" alt="p" src="https://user-images.githubusercontent.com/85270361/123558938-0d66c200-d791-11eb-8ee2-b87069d183c1.PNG">
 
 
 ## When you are finished, save and close the file, refresh the page and you will see a page similar to this :
 
 
 
-<img width="943" alt="Capture p" src="https://user-images.githubusercontent.com/85270361/123559012-78b09400-d791-11eb-9fae-2baad31d34b0.PNG">
+![image](https://github.com/Amasalaha/my-personal-project-documentation/assets/89149327/80ba8159-5ff0-4668-a72c-0574bc9aeb8a)
+
 
 
 * This page provides information about your server from the perspective of PHP. It is useful for debugging and to ensure that your settings are being applied correctly.
